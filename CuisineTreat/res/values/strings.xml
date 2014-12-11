@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cuisine Treat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="desc">Splash Screen</string>
+    <string name="title_activity_all_recipes_screen">AllRecipesScreen</string>
+    <string name="title_activity_recipe_detail">RecipeDetail</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="emailAddress">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="veg">Veg</string>
+    <string name="nonveg">Non-Veg</string>
+    <string name="both">Both</string>
+    <string name="email_desc">Username</string>
+    <string name="password_desc">Password</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="enter_credentials">Please Enter Your Credentials To LogIn.!</string>
+    <string name="login_btn">Log In and Cook!!</string>
+    <string name="title_activity_ingredients_screen">IngredientsScreen</string>
+    <string name="title_activity_play_video">PlayVideo</string>
+    <string name="timer">Click on the Top Right clock to set a Timer !</string>
+    <string name="title_activity_photo_viewer">PhotoViewer</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Favorites</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+    </array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_favorite_list_screen">FavoriteListScreen</string>
+
+</resources>

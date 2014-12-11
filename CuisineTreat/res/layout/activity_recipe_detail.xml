@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recipeDetailView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <!-- android:layout_gravity="top"
+    android:orientation="vertical" -->
+
+     
+	<ImageView
+		android:id="@+id/recipeImage"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="left"
+	    android:adjustViewBounds="false"
+	    android:cropToPadding="false"
+	    android:scaleType="fitXY" />
+	   
+	<ScrollView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    
+	    <LinearLayout 
+	        android:id="@+id/recipeDetailLayout"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+   		    android:orientation="vertical" >
+	    
+	        
+	        
+	        
+	        <TextView
+			        android:id="@+id/recipeName"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FFFFFF"
+			        android:textSize="30sp"
+			        android:textStyle="bold"
+			        android:typeface="serif"
+			        android:inputType="textMultiLine"
+			        android:maxLines="2" 
+			        android:layout_marginTop="450dp"
+			        android:background="@drawable/layout_border"
+			        android:textAlignment="center"
+			        android:padding="10dip" />
+			
+	         <TextView
+			        android:id="@+id/descriptionField"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="#FFFFFF"
+			        android:textSize="19sp"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:padding="5dip" />
+	         <TextView
+			        android:id="@+id/extraField"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="19sp"
+			        android:background="#FFFFFF"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:padding="5dip" />
+
+			    <TextView
+			        android:id="@+id/recipeIngredients"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="#FFFFFF"
+			        android:inputType="textMultiLine"
+			        android:maxLines="1000"
+			        android:scrollbars="vertical"
+			        android:textColor="#040404"
+			        android:textSize="17sp"
+			        android:textStyle="bold"
+			        android:padding="10dip" />
+
+			    <TextView
+			        android:id="@+id/checkAllIngredients"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Identify Ingredients" 
+			        android:textAlignment="gravity"
+			        android:layout_gravity="bottom"
+			        android:clickable="true"
+			        android:textSize="23sp"
+			        android:background="@drawable/layout_border"
+			        android:textColor="#FFFFFF"
+			        android:padding="5dip" 
+			        android:drawableRight="@drawable/right_round_64"/>
+
+			    <TextView
+			        android:id="@+id/countdowntimerfield"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/whiteborder"
+			        android:hint="@string/timer"
+			        android:paddingTop="15dp"
+			        android:inputType="textMultiLine"
+			        android:textAppearance="?android:attr/textAppearanceLarge" />
+			    
+			    <TextView
+			        android:id="@+id/ratingText"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/layout_border"
+			        android:padding="5dip"
+			        android:text="Rate This Recipe!"
+			        android:textColor="#FFFFFF"
+			        android:textSize="23sp"
+			        android:drawableRight="@drawable/down_circular_64" />
+			    
+			    <RatingBar android:id="@+id/rating"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/ratingbarback"
+			        android:stepSize="1.0"
+			        android:paddingLeft="59dp"
+			        android:paddingRight="59dp"
+			        android:fitsSystemWindows="true"
+			        style="?android:attr/ratingBarStyle"
+			        android:layout_weight="1.0"
+			        />
+
+			    <GridView
+			        android:id="@+id/gridView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="80dp"
+			        android:background="#FFFFFF"
+			        android:columnWidth="90dp"
+			        android:gravity="center"
+			        android:numColumns="auto_fit"
+			        android:paddingTop="20dp"
+			        android:textColor="#FFFFFF" >
+			    </GridView>
+
+			    <TextView
+			        android:id="@+id/ingredientsTextView"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/layout_border"
+			        android:padding="5dip"
+			        android:text="Ingredients List"
+			        android:textColor="#FFFFFF"
+			        android:textSize="23sp"
+			        android:drawableRight="@drawable/down_circular_64" />
+			    
+			    
+			    <!-- <TextView 
+	            android:id="@+id/ingredientsLink"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#FFFFFF"
+	            android:textSize="25sp"
+	            
+	            android:clickable="true" /> -->
+		</LinearLayout>
+	</ScrollView>
+
+</FrameLayout>

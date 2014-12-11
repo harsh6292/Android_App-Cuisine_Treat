@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/aurora_red">
+
+    <!-- <Button
+        android:id="@+id/skip_button"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button_plain"
+        android:layout_gravity="bottom"  /> -->
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/login1" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/login_button"
+        android:layout_alignBottom="@+id/login_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/register1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/login_button"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/skip"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+    
+</RelativeLayout>
